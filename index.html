@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LNURL and Lightning Address Inspector</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div>
+          <h1>LNURL and Lightning Address Inspector</h1>
+          <p>
+            View the JSON content of LNURLs and Lightning addresses to
+            understand the data associated with them.
+          </p>
+        </div>
+      </header>
+      <main>
+        <div class="box datainput">
+          <div>
+            <label for="lnurlText">Enter LNURL or lightning address</label>
+            <div class="inputbox">
+              <input type="text" name="lnurltext" id="lnurlText" />
+              <button id="extractData">Inspect</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div>
+            <strong><label for="jsonData">JSON output</label></strong>
+            <div class="dataoutput">
+              <code id="jsonData"></code>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div>
+            <strong
+              ><label for="parsedMetadata">Parsed metadata value</label></strong
+            >
+            <div class="dataoutput">
+              <code id="parsedMetadata"></code>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div>
+            <strong
+              ><label for="descriptionHash"
+                >Expected description hash (SHA256 hash of parsed metadata
+                value)</label
+              ></strong
+            >
+            <div class="dataoutput">
+              <code id="descriptionHash"></code>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        &copy; 2023 <a href="https://github.com/jimasuen">Judy Imasuen</a>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
