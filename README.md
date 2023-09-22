@@ -1,4 +1,4 @@
-# Inspector
+# LNURL and Lightning Address Inspector
 
 
 LNURL and Lightning Address Inspector:
